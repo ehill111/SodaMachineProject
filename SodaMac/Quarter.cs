@@ -13,7 +13,10 @@ namespace SodaMac
         
     //Constructors initialize upon instantiation.
 
+        public Quarter()
+        {
 
+        }
 
 
 

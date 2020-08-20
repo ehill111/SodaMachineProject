@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SodaMac
 {
-    class Userinterface
+    public static class Userinterface
     {
+
     }
 }

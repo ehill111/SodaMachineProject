@@ -8,9 +8,12 @@ namespace SodaMac
 {   //Member variables have/has a/an...
     abstract class Coin
     {
-        protected double value;
-        public double Value; // this should become a "read-only" proeprty
+        protected double Value;
         public string name;
+
+        //Properties
+        public double value; // this should become a "read-only" proeprty
+        
  
 
 
