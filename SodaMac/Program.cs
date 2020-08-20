@@ -15,8 +15,9 @@ namespace SodaMac
             //sodaMachine.DispenseCoins();
             //Console.ReadLine();
 
-            Userinterface userinterface = new Userinterface();
-            userinterface.SelectAndPayForSoda();
+
+            Userinterface.SelectPaymentForSoda();
+            Userinterface.SelectFlavorForSoda();
             Console.ReadLine();
 
            // List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
