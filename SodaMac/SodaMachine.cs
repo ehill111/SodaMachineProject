@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,13 +14,22 @@ namespace SodaMac
         public string inventory;
         public double Quarters;
         private double quarters;
-
+        private double balanceOfQuarters;
+        public double Dimes;
         private double dimes;
+        private double balanceOfDimes;
+        public double Nickels;
         private double nickels;
+        private double balanceOfNickels;
+        public double Pennies;
         private double pennies;
+        private double balanceOfPennies;
         public string rootBeer;
+        public string balanceOfRootBeer;
         public string cola;
+        public string balanceOfCola;
         public string orange;
+        public string balanceOfOrange;
 
         //Properties
 
@@ -30,52 +41,75 @@ namespace SodaMac
         //Methods do something.
         public void DispenseCoins()
         {
-            for (int index = 0; index < 21; index++)
+            for (int index = 0; index < 20; index++)
             {
-                List<double> register = new List<double>();
-                register.Add(.25);
+                List<string> register = new List<string>();
+                register.Add("Quarters");
                 Console.WriteLine(index);
-                
+                balanceOfQuarters = index;
             }
 
-            
+            for (int index = 0; index < 10; index++)
+            {
+                List<string> register = new List<string>();
+                register.Add("Dimes");
+                Console.WriteLine(index);
+                balanceOfDimes = index;
+            }
+
+            for (int index = 0; index < 20; index++)
+            {
+                List<string> register = new List<string>();
+                register.Add("Nickels");
+                Console.WriteLine(index);
+                balanceOfNickels = index;
+            }
+
+            for (int index = 0; index < 50; index++)
+            {
+                List<string> register = new List<string>();
+                register.Add("Pennies");
+                Console.WriteLine(index);
+                balanceOfPennies = index;
+            }
+            Console.WriteLine();
         }
-       
-        public void DispenseSoda()
+
+        public void DispenseCans()
         {
-            List<string> inventory = new List<string> { "Rootbeer", "Cola", "Orange" };
+            for (int index = 0; index < 50; index++)
+            {
+                List<string> register = new List<string>();
+                register.Add("Cola");
+                Console.WriteLine(index);
+                int balanceOfCola = index;
+            }
+
+            for (int index = 0; index < 50; index++)
+            {
+                List<string> register = new List<string>();
+                register.Add("Root Beer");
+                Console.WriteLine(index);
+                int balanceOfRootBeer = index;
+            }
+
+            for (int index = 0; index < 50; index++)
+            {
+                List<string> register = new List<string>();
+                register.Add("Orange");
+                Console.WriteLine(index);
+                int balanceOfOrange = index;
+            }
+            Console.WriteLine();
+
         }
-            //THIS IS NOT MINE!!! IT'S POINTING ME BACK TO MICROSOFT DOCUMENTATION WHERE I SAW EXAMPLES LIKE THIS.
-            //denominations = new List<Coin>();
-            //denominations.Add(new Coin { name = "Ten", value = 1000 });
-            //denominations.Add(new Coin { name = "Five", value = 500 });
-            //denominations.Add(new Coin { name = "One", value = 100 });
-            //denominations.Add(new Coin { name = "Quarter", value = 25 });
-            //denominations.Add(new Coin { name = "Dime", value = 10 });
-            //denominations.Add(new Coin { name = "Nickel", value = 5 });
-            //denominations.Add(new Coin { name = "Penny", value = 1 });
-
-            //denominations.Sort();
-            //denominations.Revers
-
-        public void UseMachine()
-        {
-
-        }
 
 
-        
-
-
-
-        
-
-        
-
-                    
-            
     }
+
+
 }
+
 
 
 
