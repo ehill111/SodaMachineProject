@@ -11,6 +11,9 @@ namespace SodaMac
 
         public static void SelectAndPayForSoda()
         {
+            List<string> coinListForPrompts = new List<string> { "Coins", "Dollar", "Debit", "Credit", };
+            List<string> canListForPrompts = new List<string> { "Root Beer", "Orange", "Cola" };
+            
             Console.WriteLine("Hello! Enter coin, dollar, debit, or credit payment. Push button: (1) Coins, (2) Dollar, (3) Debit, or (4) Credit.");
             Console.ReadLine();
             Console.WriteLine("Unfortunately, you are broke. Your card was declined. Choose another method of payment: (1) Coins, (2) Dollar, (3) Debit, or (4) Credit.");
