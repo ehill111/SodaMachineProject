@@ -9,8 +9,12 @@ namespace SodaMac
     abstract class Can
     {
         protected double cost;
-        public double Cost;
-        public string name;
+
+        public double Cost 
+         {
+            get => cost;//Got rid of the error, but ???
+         }
+         public string name;
 
     //Contructors initialize values upon instantiation.
 

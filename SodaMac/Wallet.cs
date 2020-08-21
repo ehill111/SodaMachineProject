@@ -22,7 +22,7 @@ namespace SodaMac
             Dime Dimes = new Dime();
             Nickle Nickles = new Nickle();
             Penny Pennies = new Penny();
-
+            
             for (int index = 0; index < 12; index++)
             {
 
@@ -55,7 +55,7 @@ namespace SodaMac
                 Console.WriteLine(index);
                 walletBalanceOfPennies = index;
             }
-            Console.WriteLine()
+            Console.WriteLine();
 
 
         }
