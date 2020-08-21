@@ -18,8 +18,8 @@ namespace SodaMac
         public double Dimes;
         private double dimes;
         private double balanceOfDimes;
-        public double Nickels;
-        private double nickels;
+        public double Nickles;
+        private double nickles;
         private double balanceOfNickels;
         public double Pennies;
         private double pennies;
@@ -41,6 +41,13 @@ namespace SodaMac
         //Methods do something.
         public void DispenseCoins()
         {
+            
+            Quarter Quarters = new Quarter();//Will these objects retain their data even though they're instantiated in a method and as member variables?
+            Dime Dimes = new Dime();
+            Nickle Nickles = new Nickle();
+            Penny Pennies = new Penny();
+            
+
             for (int index = 0; index < 20; index++)
             {
                 List<string> register = new List<string>();
@@ -60,7 +67,7 @@ namespace SodaMac
             for (int index = 0; index < 20; index++)
             {
                 List<string> register = new List<string>();
-                register.Add("Nickels");
+                register.Add("Nickles");
                 Console.WriteLine(index);
                 balanceOfNickels = index;
             }
@@ -77,6 +84,10 @@ namespace SodaMac
 
         public void DispenseCans()
         {
+
+            Cola Cola = new Cola();//Need to change names. Similarity to class is confusing.
+            RootBeer RootBeer = new RootBeer();
+            OrangeSoda Orange = new OrangeSoda();
             for (int index = 0; index < 50; index++)
             {
                 List<string> register = new List<string>();
@@ -88,7 +99,7 @@ namespace SodaMac
             for (int index = 0; index < 50; index++)
             {
                 List<string> register = new List<string>();
-                register.Add("Root Beer");
+                register.Add("Root Beer");//How do spaces in list names affect the system?
                 Console.WriteLine(index);
                 int balanceOfRootBeer = index;
             }
