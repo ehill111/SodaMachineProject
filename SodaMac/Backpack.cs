@@ -16,11 +16,11 @@ namespace SodaMac
 
 
 
-
-
-
         //Methods do something.
+        public void KeepTrackOfCans()
+        {
 
+        }
 
     }
 }

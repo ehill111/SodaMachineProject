@@ -12,6 +12,7 @@ namespace SodaMac
     {
         public string register;
         public string inventory;
+        public double Coin;
         public double Quarters;
         private double quarters;
         private double balanceOfQuarters;
@@ -42,23 +43,24 @@ namespace SodaMac
         public void DispenseCoins()
         {
             
-            Quarter Quarters = new Quarter();//Will these objects retain their data even though they're instantiated in a method and as member variables?
+            //Will these objects retain their data even though they're instantiated in a method and as member variables?
             Dime Dimes = new Dime();
             Nickle Nickles = new Nickle();
             Penny Pennies = new Penny();
-            
+            Quarter Quarters = new Quarter();
 
             for (int index = 0; index < 20; index++)
             {
-                List<string> register = new List<string>();
-                register.Add("Quarters");
+                
+                List<Coin> Coin = new List<Coin>();
+                register.Add("Quarters");//This error under Add occurred when I instantiated the lists.
                 Console.WriteLine(index);
                 balanceOfQuarters = index;
             }
 
             for (int index = 0; index < 10; index++)
             {
-                List<string> register = new List<string>();
+                List<Coin> Coin = new List<Coin>();
                 register.Add("Dimes");
                 Console.WriteLine(index);
                 balanceOfDimes = index;
@@ -66,7 +68,7 @@ namespace SodaMac
 
             for (int index = 0; index < 20; index++)
             {
-                List<string> register = new List<string>();
+                List<Coin> Coin = new List<Coin>();
                 register.Add("Nickles");
                 Console.WriteLine(index);
                 balanceOfNickels = index;
@@ -74,7 +76,7 @@ namespace SodaMac
 
             for (int index = 0; index < 50; index++)
             {
-                List<string> register = new List<string>();
+                List<Coin> register = new List<Coin>();
                 register.Add("Pennies");
                 Console.WriteLine(index);
                 balanceOfPennies = index;
@@ -90,7 +92,7 @@ namespace SodaMac
             OrangeSoda Orange = new OrangeSoda();
             for (int index = 0; index < 50; index++)
             {
-                List<string> register = new List<string>();
+                List<Coin> Coin = new List<Coin>();
                 register.Add("Cola");
                 Console.WriteLine(index);
                 int balanceOfCola = index;
@@ -98,7 +100,7 @@ namespace SodaMac
 
             for (int index = 0; index < 50; index++)
             {
-                List<string> register = new List<string>();
+                List<Coin> Coin = new List<Coin>();//List<string> register = new List<string>();
                 register.Add("Root Beer");//How do spaces in list names affect the system?
                 Console.WriteLine(index);
                 int balanceOfRootBeer = index;
@@ -106,7 +108,7 @@ namespace SodaMac
 
             for (int index = 0; index < 50; index++)
             {
-                List<string> register = new List<string>();
+                List<Coin> Coin = new List<Coin>();
                 register.Add("Orange");
                 Console.WriteLine(index);
                 int balanceOfOrange = index;
